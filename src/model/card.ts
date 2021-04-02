@@ -2706,6 +2706,7 @@ const CARD_REGISTRY: Record<CardName, Card> = {
               selectedPlayer: null,
             },
           });
+          player.gainResources(gameState, { [ResourceType.BERRY]: 3 });
         } else {
           player.gainResources(gameState, { [ResourceType.BERRY]: 3 });
           const chapelInfo = player.getPlayedCardInfos(CardName.CHAPEL);
